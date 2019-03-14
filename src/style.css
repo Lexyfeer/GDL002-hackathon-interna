@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.btn{
+    width: 10rem;
+    margin: 1rem;
+}
+
+.contentInfo{
+    margin-top: 1rem;
+}
+
+.img-fluid {
+    width: 10rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
+    opacity: .5;
+    transition: .25s ease-in-out;
+}
+
+.img-fluid:hover {
+    opacity: 1;
+}
+
+body h1 {
+    text-align: center;
+}

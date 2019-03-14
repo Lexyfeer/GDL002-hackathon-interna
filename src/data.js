@@ -8,10 +8,9 @@ const comedyMoviesById = ["tt0107048", "tt3106046", "tt0095631", "tt0093822", "t
 "tt1119646", "tt7634968", "tt0212338", "tt0302886"];
 
 
-
 // Ciclo for para hacer push de cada pelicula
 for(let i = 0; i <  comedyMoviesById.length; i++){
-  fetch('http://www.omdbapi.com/?i=' +  comedyMoviesById[i] + '&apikey=a934b92d').then( (data) => {
+  fetch('http://www.omdbapi.com/?i=' +  comedyMoviesById[i] + '&apikey=c0df8f38').then( (data) => {
     return data.json();
   }).then((dataAsJSON) => {
     movies[i] = dataAsJSON;
@@ -35,3 +34,20 @@ const fantasyMoviesById =["tt0032138", "tt0120737 ", " tt0241527","tt0327597","t
 
 
 const actionMoviesById = ["tt0088247","tt0095016","tt1206885","tt1206885","tt0093870","tt0266697","tt0088944","tt4912910" ,"tt2406566","tt0293662"]
+
+
+document.getElementById('btn1').addEventListener('click', traer);
+let contenido = document.querySelector('#content');
+
+function traer () {
+    
+// fetch estaria tomando una url en este caso esta de manera local y al nivel por eso no se especifica que este dentro de alguna carpeta.
+    fetch ('https://randomuser.me/api/')
+    .then (dataApi => dataApi.json()) 
+    .then (dataApi => {
+        console.log(dataApi.results['0']);
+         content.innerHTML = `<span class="movie"><h2>${dataApi.Title} + " (" + ${dataApi.Year} + ")"</h2></span><span><img src="${dataApi.Poster}" class="img-fluid border border-primary alt="></span><span><h3>${dataApi.Genre}</h3></span><span><p>${dataApi.Plot}</p></span>`;
+        
+    })
+    
+}
