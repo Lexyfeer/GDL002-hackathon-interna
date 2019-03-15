@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     background-image: url(imagenes/8230.jpg);
     width: 100%;
@@ -12,8 +18,11 @@ body {
 .header img{
     height: 4rem;
 }
-.navbar-toggler{
-    margin-left: 80rem;
+.navbar{
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 100%;
 }
 
 #botonE, #botonEm, #botonEmo {
@@ -42,18 +51,19 @@ h2{
 #welcome {
     text-align: center;
     opacity: 0.9;
-    margin-top: 3rem;
-    border-radius: 25px;
+    margin-top: 7rem;
+    border-radius: 2rem;
     background-color: rgb(255, 245, 204, 0.8);
   }
 
 .contentInfo{
     margin-top: 1rem;
+    display: inline-block;
 }
 
 .btn{
-    width: 10rem;
-    margin: 1rem;
+    width: 15rem;
+    margin-top: 7rem;
 }
 
 .card {
@@ -64,7 +74,8 @@ h2{
 }
 
 .img-fluid {
-    width: 100%;
+    width: 10rem;
+    height: 15rem;
     border: .5rem solid black;
     border-radius: 1rem;
     /* opacity: .5;
