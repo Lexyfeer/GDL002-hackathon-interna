@@ -121,13 +121,19 @@ function showMovies2 (movies2){
   movies2.map((movies2) => {
     let title2 = movies2.Title + " (" + movies2.Year + ")"
     let nameMovies2 =
-      `<div onclick="" class="movies">
-        <div class="movieBg"><img src="${movies2.Poster}"></div>
-        <div class="movieText">
-          <h3 class="movieTitle"><strong>${title2}</strong></h3>
-          <p class="moviePlot">${movies2.Plot}</p>
-        </div>
-      </div>`;
+    `<div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4 col-sm-12">
+        <img class="img-fluid" src="${movies2.Poster}" alt="...">
+      </div>
+      <div class="col-md-8 d-none d-md-block">
+      <div class="card-body">
+      <h5 class="card-title">${title2}</h5>
+      <p>${movies2.Plot}</p>
+     </div>
+     </div>
+     </div>
+    </div>`;
     div.insertAdjacentHTML("beforeend", nameMovies2);
 
   })
@@ -172,13 +178,19 @@ function showMovies3 (movies3){
   movies3.map((movies3) => {
     let title3 = movies3.Title + " (" + movies3.Year + ")"
     let nameMovies3 =
-      `<div onclick="" class="movies">
-        <div class="movieBg"><img src="${movies3.Poster}"></div>
-        <div class="movieText">
-          <h3 class="movieTitle"><strong>${title3}</strong></h3>
-          <p class="moviePlot">${movies3.Plot}</p>
-        </div>
-      </div>`;
+    `<div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4 col-sm-12">
+        <img class="img-fluid" src="${movies3.Poster}" alt="...">
+      </div>
+      <div class="col-md-8 d-none d-md-block">
+      <div class="card-body">
+      <h5 class="card-title">${title3}</h5>
+      <p>${movies3.Plot}</p>
+     </div>
+     </div>
+     </div>
+    </div>`;
     div.insertAdjacentHTML("beforeend", nameMovies3);
 
   })
