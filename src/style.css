@@ -27,12 +27,12 @@ body {
 
 #botonE, #botonEm, #botonEmo {
     opacity: 0.9;
+    margin-top: 2.5rem;
+    margin: 1rem;
 }
 .btnEmotion{
     width: 10rem;
     height: 10rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
     margin: 1rem;
     border-radius: 1rem;
 }
@@ -85,3 +85,4 @@ h2{
 .img-fluid:hover {
     opacity: 1;
 }
+
