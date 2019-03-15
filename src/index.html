@@ -5,20 +5,66 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css" />
     <title>Hackathon peliculas</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="cards">
-      <a id="logoNav" href="#">
-          <img src="img/tristeza.jpg" width="80">
-              </a>
-          <img src="img/aburrido.jpg" width="75">
-          <img src="img/emocionfeliz.jpg" width="80">
-      <button class ="">Triste</button>
-      <button class ="">Aburriodo</button>
-      <button class ="">Feliz</button>
-    </div>
+    <main class="container">
+        <!-- <a id="inicio"></a> -->
+
+        <nav class="navbar sticky-top navbar-light bg-light header">
+            <a class="navbar-brand" href="#"><img src="imagenes/feellogo.png"></a>
+        </nav>
+
+        <section id="btnMenu" class="row text-center" style="display:block;">
+            <div id="welcome">
+                <p>Sabemos que es abrumador elegir una pelicula... te lo facilitamos.</p>
+                <p>¿Cómo te sientes hoy?</p>
+             </div>
+             <div>
+                <a href="#contenidoComedy"><button id="botonE"><img class="btnEmotion" src="imagenes/triste.png"/></button></a>
+      
+                <a href="#contenidoAction"><button id="botonEm"><img class="btnEmotion" src="imagenes/aburrido.png" /></button></a>
+      
+                <a href="#contenidoFantasy"><button id="botonEmo"><img class="btnEmotion" src="imagenes/alegre.png" /></button></a>
+              </div>
+        </section>
+        
+        <section id="mostrar" class="container">
+            <button id="volver" class="btn btn-danger">Elegir otra emocion</button>
+            <h2>Nuestras mejores sugerencias</h2>
+
+            <a id="contenidoComedy"></a>
+            <div class="row col-md-4 contentInfo" id="contentComedy" style="display:none;">
+            <!-- aqui van las peliculas si selecciona que esta triste-->
+                
+            </div>
+
+            <a id="contenidoAction"></a>
+            <div class="row col-md-4 contentInfo" id="contentAction" style="display:none;">
+               <!-- aqui van las peliculas si selecciona que esta aburrido-->
+                    
+           </div>
+
+           <a id="contenidoFantasy"></a>
+           <div class="row col-md-4 contentInfo" id="contentFantasy" style="display:none;">
+               <!-- aqui van las peliculas si selecciona que esta feliz-->
+                    
+           </div>
+        </section>
+
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Sketchepedia - www.freepik.com</a>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+           
+    </main>
+    
 
     <script src="data.js"></script>
     <script src="main.js"></script>
