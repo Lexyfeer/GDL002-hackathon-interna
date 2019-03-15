@@ -6,6 +6,7 @@ document.getElementById('volver').addEventListener('click', hiddenAll);
 
 function hiddenAll() {
   document.getElementById("btnMenu").style.display = "block";
+  document.getElementById("mostrar").style.display = "none";
   document.getElementById("contentComedy").style.display = "none";
   document.getElementById("contentAction").style.display = "none";
   document.getElementById("contentFantasy").style.display = "none";
